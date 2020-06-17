@@ -4985,7 +4985,13 @@ void SpellMgr::LoadDbcDataCorrections()
             break;
         // Onyxia's Lair, Onyxia, Eruption:
         case 17731:
+            spellInfo->EffectBasePoints[0] = 2600;
+            spellInfo->Effect[1] = SPELL_EFFECT_DUMMY;
+            spellInfo->CastingTimeIndex = 3;
+            spellInfo->EffectRadiusIndex[1] = 19; // 18yd instead of 13yd to make sure all cracks erupt
+            break;
         case 69294:
+            spellInfo->EffectBasePoints[0] = 4000;
             spellInfo->Effect[1] = SPELL_EFFECT_DUMMY;
             spellInfo->CastingTimeIndex = 3;
             spellInfo->EffectRadiusIndex[1] = 19; // 18yd instead of 13yd to make sure all cracks erupt
